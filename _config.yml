@@ -32,7 +32,7 @@ lang: "en"
 author: "Joel Kalete"
 title: "{ Joel Kalete }"
 description: "Blog and website of Joel Kalete, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+keywords: "website, joel, kalete"
 favicon: "/img/favicon.ico"
 
 ################
@@ -110,16 +110,24 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
-
+  - image: "/img/timeline/xl.jpg"
+    date: "September 2015 - Today"
+    description: "Created an automatic forecasting extension using python!"
+    page: "about"
+    
+  - image: "/img/timeline/bot.jpg"
+    date: "July 2015"
+    description: "Modified a bot using python to enable remote management of a vps using hipchat!."
+    page: "about"
+    
+  - image: "/img/timeline/game.png"
+    date: "September 2011 - August 2013"
+    description: "Made my first online game."
+    page: "game"
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+timeline-img: "/img/timeline/start.png"
+
 
 ###########
 # Contact #
@@ -165,7 +173,7 @@ social:
 pages_list:
   About Me: 'about'
   #Blog: 'latest-post' @Joel this is where you turned off the blog 16/07/16
-  #Timeline: 'timeline'
+  Projects: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site

@@ -162,10 +162,12 @@ a {
     padding: 100px 0;
     text-align: center;
     color: $intro-text-color;
+    
     {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
-    background-position: 0px 1px;
+    /* background-position: 0px 1px; */
     {% endif %}
+    
     background-color: $header-background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -239,6 +241,7 @@ a {
         margin-top: 125px;
         padding-top: 125px;
     }
+ 
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
         display: block;
@@ -325,6 +328,22 @@ ul.social-buttons li a {
         background-color: darken($social-buttons-color, 10%);
     }
 }
+
+
+.embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 footer {
     padding: 50px 0;
