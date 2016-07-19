@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+#background-img: "../img/intro-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -63,7 +63,7 @@ me-img: "/img/author.png"
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#000000"
+color-browser: "#DFFFA5"
 apple-status-bar-style: "black"
 
 ################
@@ -113,12 +113,12 @@ events:
   - image: "/img/timeline/xl.jpg"
     date: "September 2015 - Today"
     description: "Created an automatic forecasting extension using python!"
-    page: "about"
+    page: "autoreview"
     
   - image: "/img/timeline/bot.jpg"
     date: "July 2015"
     description: "Modified a bot using python to enable remote management of a vps using hipchat!."
-    page: "about"
+    page: "bot"
     
   - image: "/img/timeline/game.png"
     date: "September 2011 - August 2013"
@@ -126,7 +126,7 @@ events:
     page: "game"
 # First image of the Timeline
 
-timeline-img: "/img/timeline/start.png"
+timeline-img: "/img/timeline/start.jpg"
 
 
 ###########

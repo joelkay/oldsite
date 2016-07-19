@@ -67,14 +67,14 @@ div {
 }
 
 a {
-    color: $secondary-color;
+    color: $link-color;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken($secondary-color,20%);
+        color: darken($link-color,20%);
     }
 }
 
@@ -107,7 +107,7 @@ a {
     a {
         color: $navbar-color;
         @if $header-text-shadow{
-            text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
         }
     }
     .nav {
@@ -118,20 +118,20 @@ a {
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    /* color: rgba($font-color, 0.8); */
+                    color: rgba($font-color, 0.8); 
                     outline: none;
-                    background-color: rgba($font-color, 0.3);
+                    background-color: rgba($link-color, 0.3);
                 }
                 &:focus,
                 &:active {
                     outline: none;
-                      background-color: rgba($font-color, 0.3);
+                      background-color: rgba($link-color, 0.3);
                 }
             }
             &.active {
                 outline: none;
                 a {
-                    background-color: rgba($font-color, 0.3);
+                    background-color: rgba($link-color, 0.3);
                     &:hover {
                         color: $navbar-color;
                     }
