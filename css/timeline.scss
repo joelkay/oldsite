@@ -17,7 +17,7 @@
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: $secondary-color;
+    background-color: $line-color;
 }
 
 .timeline>li {
@@ -65,7 +65,7 @@
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 6px solid $secondary-color;
+    border: 6px solid $img-color;
     border-radius: 100%;
     text-align: center;
     color: transparent;
@@ -86,7 +86,7 @@
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 6px solid $secondary-color;
+    border: 6px solid $img-color;
     border-radius: 100%;
     text-align: center;
     color: transparent;
@@ -101,7 +101,7 @@
     width: 100px;
     height: 100px;
     margin-left: 0;
-    /*border: 6px solid $secondary-color;*/
+    border: 5px solid $img-color;
     border-radius: 100%;
     text-align: center;
     color: transparent;
