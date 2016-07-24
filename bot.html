@@ -2,6 +2,39 @@
 layout: project
 title: Project - Python Server Bot
 ---
+<div class="jumbotron">
+    <p>I designed a bot that allowed for my team to use commands using hipchat for interaction with the virtual private server where our game was hosted.</p>
+</div>
 
-I designed a bot that allowed for my team to use commands using hipchat for interaction with the virtual private server where our game was hosted.
+Some sample code shown below:
 
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">subprocess</span> <span style="color: #008800; font-weight: bold">import</span> call,Popen,PIPE
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">git</span>
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">will.plugin</span> <span style="color: #008800; font-weight: bold">import</span> WillPlugin
+<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">will.decorators</span> <span style="color: #008800; font-weight: bold">import</span> respond_to, periodic, hear, randomly, route, rendered_template, require_settings
+
+
+<span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">GamePlugin</span>(WillPlugin):
+
+    <span style="color: #555555; font-weight: bold">@respond_to</span>(<span style="background-color: #fff0f0">&quot;start game&quot;</span>)
+    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">game</span>(<span style="color: #007020">self</span>, message):
+    	<span style="color: #DD4422">&quot;&quot;&quot;start game: Start game server!&quot;&quot;&quot;</span>
+	<span style="color: #888888">#g = git.cmd.Git(&quot;/root/evolution&quot;)</span>
+	<span style="color: #888888">#g.reset(&quot;master&quot;,hard=True)</span>
+	<span style="color: #888888">#g.pull()</span>
+
+	<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">get_exitcode3</span>(cmd):
+		<span style="color: #DD4422">&quot;&quot;&quot;</span>
+<span style="color: #DD4422">		Execute the external command and get its exitcode, stdout and stderr.</span>
+<span style="color: #DD4422">		&quot;&quot;&quot;</span>
+		proc <span style="color: #333333">=</span> Popen(cmd, stdout<span style="color: #333333">=</span>PIPE, stderr<span style="color: #333333">=</span>PIPE,shell<span style="color: #333333">=</span><span style="color: #007020">True</span>)
+		out, err <span style="color: #333333">=</span> proc<span style="color: #333333">.</span>communicate()
+		exitcode <span style="color: #333333">=</span> proc<span style="color: #333333">.</span>returncode
+		<span style="color: #888888">#</span>
+		<span style="color: #008800; font-weight: bold">return</span> exitcode, out, err
+
+	cmd <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;bash /root/evobot/checkgame.sh&quot;</span>  <span style="color: #888888"># arbitrary external command, e.g. &quot;python mytest.py&quot;</span>
+	exitcode, out, err <span style="color: #333333">=</span> get_exitcode3(cmd)
+	<span style="color: #007020">self</span><span style="color: #333333">.</span>reply(message, out)
+    
+</pre></div>
