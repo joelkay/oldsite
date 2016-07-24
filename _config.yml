@@ -60,10 +60,21 @@ lines: # You can add HTML Tags in the Text
 
 me-img: "/img/author.jpg"
 
+
+
+##############################
+# Image Gallery #
+##############################
+gallery1: "/img/gallery/python.jpg"
+gallery2: "/img/gallery/lamp.png"
+gallery3: "/img/gallery/java.png"
+gallery4: "/img/gallery/git.png"
+
+
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#F4C95D"
+color-browser: "#3A3D3D"
 apple-status-bar-style: "black"
 
 ################
@@ -143,7 +154,7 @@ email: "joeldkay01@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Joel Kalete is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Joel Kalete is an awesome person."
 author_blurb_image: "/img/author.png"
 
 ##################

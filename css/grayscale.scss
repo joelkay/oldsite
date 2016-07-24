@@ -168,7 +168,6 @@ a {
     /* background-position: 0px 1px; */
     {% endif %}
     
-    background-color: $header-background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -234,9 +233,61 @@ a {
     }
 }
 
-.content-section {
+/* Added in { Personal } for default background */
+.content-section1 {
     margin-top: 100px;
     padding-top: 100px;
+    @media(min-width:767px) {
+        margin-top: 125px;
+        padding-top: 125px;
+    }
+ 
+    /* Added in { Personal } for responsive images in posts and section contents */
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        /* border: 1px solid $font-color; */
+    }
+    /* Added in { Personal } */
+    ul,
+    ol {
+        text-align: center;
+        margin: 0 0 25px;
+        font-size: 18px;
+        line-height: 1.5;
+        list-style-position: inside;
+    }
+    pre {
+      padding: 0;
+      > code {
+        text-align: left;
+      }
+    }
+    img.emoji {
+      /* Override any img styles to ensure Emojis are displayed inline */
+      margin: 0px !important;
+      display: inline !important;
+      border: 1px solid $primary-color !important;
+    }
+
+    /* Added in { Personal } */
+    &#post {
+        div.author img {
+            border: 0px;
+            margin-bottom: 20px;
+            padding: 4px;
+        }
+    }
+}
+
+/* Added in { Personal } for defsault background */
+.content-section {
+    background-color: $primary-color;
+    margin-top: 100px;
+    padding-top: 100px;
+    width: 100%;
     @media(min-width:767px) {
         margin-top: 125px;
         padding-top: 125px;
@@ -329,20 +380,6 @@ ul.social-buttons li a {
     }
 }
 
-
-.embed {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 
 footer {
