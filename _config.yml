@@ -121,7 +121,7 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/site.jpg"
+  - image: "/img/timeline/divine.jpg"
     date: "September 2016"
     description: "Designed and built front page for: A Divine Service!"
     page: "divine"
