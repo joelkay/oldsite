@@ -121,8 +121,13 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/site.jpg"
+    date: "September 2016"
+    description: "Designed and built front page for: A Divine Service!"
+    page: "divine"
+    
   - image: "/img/timeline/xl.jpg"
-    date: "September 2015 - Today"
+    date: "June 2016"
     description: "Created an automatic forecasting extension using python!"
     page: "autoreview"
     
