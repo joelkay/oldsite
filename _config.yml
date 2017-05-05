@@ -68,7 +68,7 @@ me-img: "/img/author.jpg"
 gallery1: "/img/gallery/python.png"
 gallery2: "/img/gallery/lamp.png"
 gallery3: "/img/gallery/jekyll.png"
-gallery4: "/img/timeline/start.jpg"
+gallery4: "/img/gallery/start.png"
 
 
 ##############################
@@ -142,7 +142,7 @@ events:
     page: "game"
 # First image of the Timeline
 
-timeline-img: "/img/timeline/start.jpg"
+timeline-img: "/img/timeline/start.png"
 
 
 ###########
