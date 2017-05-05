@@ -65,7 +65,7 @@ me-img: "/img/author.jpg"
 ##############################
 # Image Gallery #
 ##############################
-gallery1: "/img/gallery/python.jpg"
+gallery1: "/img/gallery/python.png"
 gallery2: "/img/gallery/lamp.png"
 gallery3: "/img/gallery/jekyll.png"
 gallery4: "/img/timeline/start.jpg"
