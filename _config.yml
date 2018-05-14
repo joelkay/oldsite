@@ -121,11 +121,6 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/divine.jpg"
-    date: "September 2016"
-    description: "Designed and built front page for: A Divine Service!"
-    page: "divine"
-    
   - image: "/img/timeline/xl.jpg"
     date: "June 2016"
     description: "Created an automatic forecasting extension using python!"
@@ -205,6 +200,6 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems:
+plugins:
   - jekyll-paginate
   - jemoji
